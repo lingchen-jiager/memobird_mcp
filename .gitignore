@@ -1,0 +1,21 @@
+# 虚拟环境
+.venv/
+venv/
+
+# 凭据：唯一存放真实 AK 的文件，绝不入库
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# 工具
+.idea/
+.vscode/
+.pytest_cache/
+.ruff_cache/
+.DS_Store

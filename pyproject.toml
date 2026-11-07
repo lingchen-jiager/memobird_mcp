@@ -1,0 +1,34 @@
+[project]
+name = "memobird-mcp"
+version = "0.1.0"
+description = "咕咕机（Memobird）热敏打印机 MCP 服务 + 快速出纸 CLI"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "chen" }]
+keywords = ["mcp", "memobird", "printer", "fastmcp"]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: Microsoft :: Windows",
+]
+
+dependencies = [
+    "fastmcp>=4.1.0",
+    "pillow>=10.0.0",
+    "requests>=2.30.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+memobird = "memobird_mcp.cli:main"
+memobird-mcp = "memobird_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/memobird_mcp"]
+
+[dependency-groups]
+dev = []

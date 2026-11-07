@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "memobird": {
+      "command": "REPLACE_WITH_PROJECT_DIR\\.venv\\Scripts\\python.exe",
+      "args": [
+        "REPLACE_WITH_PROJECT_DIR\\run.py"
+      ]
+    }
+  }
+}
